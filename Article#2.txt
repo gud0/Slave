@@ -1,0 +1,30 @@
+Article#2 TO COPY AND PASTE
+
+TITLE: Slave instructions
+
+BODY: 
+
+Quite simple really ~
+
+* Excerpt: use format _Leave text untouched_
+** The excerpt of the latest article appears at top of home page, so it looks odd if you don't use it
+** Excerpt is also used in site search results
+* Categories (sometimes called tags): categories are shown at the end of each article and on the home page. There's a section in the stylesheet where you can colour code these
+* Article image(s): shows below the subhead and above the main body of the article
+* Subhead: have a guess
+
+Note that by default, site search does not search Categories, Excerpt or custom fields. For a more comprehensive search, install the @wet_haystack@ plugin and choose the option to search these fields.
+
+Colours: Apart from Form and Button colours (which are left in place) all colours used are grouped together at the end of the stylesheet so you can easily change them into something much more uplifting. Enjoy!
+
+EXCERPT: (Format set to Leave text untouched)
+
+This excerpt of the Instructions article will appear in search results and once appeared at the top of the home page until a new article was written and the new article's excerpt then appeared at the top of the home page.
+
+ARTICLE IMAGE: 6
+
+SUBHEAD: 
+
+Instructions subheading
+
+CATEGORIES: Select any two

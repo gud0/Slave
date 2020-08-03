@@ -1,0 +1,23 @@
+Article#3 TO COPY AND PASTE
+
+TITLE: About slave
+
+BODY:
+
+The way Gargoyle and its spiders have crawled into every corner of our modern world has created a monster of a web previously unimaginable. Independent search engines have been devoured and Gargoyle has trapped millions of people who clamour for recognition. Web designers have danced to Gargoyle's tune for many years trying to get their client's websites onto the first page of search results. Semantic design, microformats and schema are just some of the newer ways to please the beast. What you _don't_ want is for the beast to punish you for *duplicate content*.
+
+The Slave theme for Textpattern came from my realisation that many websites duplicate their own content by the way they manage that content. You can have a list of excerpts of articles on the front page but the same excerpts can also show up in the section's article list, or in a search results page. If someone links to that results page or list page, the Gargoyle sees duplicate content. Canonical URLs are used to show the search engines that only one URL is to be indexed, but I don't trust the beast. Yes, I'm probably over-paranoid but it made me see if I could find a way to make a site where there cannot be duplicate content.
+
+A single-page theme is one way and the "Wave theme for Textpattern":https://wave.gud.one/ is an example. Wave is a brochure type theme without commenting, so what about a typical blog with comments? Slave has only one excerpt on the home page and although a search can show all excerpts, the home page excerpt gets replaced whenever there's a new article, so I think we can get away with that tiny bit of temporary duplicate content. There's also a list of article titles on the home page but there is no section list so no duplication there. You can try to get duplicate content by adding various things to the URL but you won't find it. A big *thank you* must go out to Textpattern developer *Oleg* for a snippet of code that trims away all possible duplicate URL extensions, from my tests at least. If you find any duplicates please let us know via the Theme Support section of forum.textpattern.com.
+
+EXCERPT: (set Format to Leave text untouched)
+
+Web designers have become slaves to Gargoyle as we jump through hoops and try to get high in the search engine results pages. To appease the beast I have made a theme that <em>cannot</em> unknowingly have duplicate content.
+
+ARTICLE IMAGE: 6
+
+SUBHEAD:
+
+Appeasing the beast
+
+CATEGORIES: Select any two
