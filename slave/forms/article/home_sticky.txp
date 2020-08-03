@@ -1,0 +1,7 @@
+<div class="sticky-post">
+<article class="article stickypost" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <h2 class="visually-hidden">Slave theme instructions</h2>
+<p class="stickyleft" itemprop="abstract">This teaser is fixed &mdash; (home_sticky form) &mdash; so use to draw attention to something special or permanent. <a class="next" href="<txp:permlink />" itemprop="url isPartOf" title="<txp:text item="read_more" />">More&hellip;</a></p>
+  <txp:image class="stickyright" id="5" />
+</article>
+</div>

@@ -1,0 +1,35 @@
+
+<txp:variable name="this_comment" value='<txp:comment_email />' />
+<txp:if_variable name="this_comment" value='<txp:author_email />'>
+    <article class="comments comments-author" itemscope itemtype="https://schema.org/Comment">
+<txp:else />
+    <article class="comments" itemscope itemtype="https://schema.org/Comment">
+</txp:if_variable>
+
+    <h3 class="sc">
+        <span class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <txp:comment_name />
+            </span>
+        </span>
+
+        <txp:if_variable name="this_comment" value='<txp:author_email />'>
+            <span class="is-author">
+                (<txp:text item="author" />)
+            </span>
+        </txp:if_variable>
+
+
+    </h3>
+
+    <div itemprop="text">
+        <txp:comment_message />
+    </div>
+
+    <p class="footnote sc">
+        <time datetime="<txp:comment_time format="iso8601" />" itemprop="dateCreated">
+            <txp:comment_time format="%d %h %Y %H:%M" />
+        </time>
+    </p>
+
+</article>

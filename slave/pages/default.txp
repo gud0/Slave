@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title><txp:page_title /></title>
+
+<txp:evaluate query='"<txp:site_url trim="/" /><txp:page_url type="req" />" != "<txp:page_url context="id, s, c, context, q, m, month, author, commented" />"'>
+    <txp:txp_die status="404" />
+</txp:evaluate>
+
+<!--  <txp:css format="link" media="" />      -->
+ <link rel="stylesheet" href="<txp:site_url />css/slave.css"> 
+
+
+    <meta name="generator" content="Textpattern CMS">
+    <txp:if_search>
+        <meta name="robots" content="none">
+    <txp:else />
+            <txp:meta_description />
+
+                <txp:variable name="page" value='<txp:page_url type="pg" />' />
+                <txp:if_variable name="page" value="1">
+                    <meta name="robots" content="index, follow">
+                    <link rel="canonical" href="<txp:site_url />">
+                    <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "WebSite",
+                            "headline": "<txp:site_name escape="json" />",
+                            <txp:if_description>"description": "<txp:meta_description format="" escape="json" />",</txp:if_description>
+                            "url": "<txp:site_url escape="json" />"
+                        }
+                    </script>
+                <txp:else />
+                    <meta name="robots" content="noindex, follow">
+                </txp:if_variable>
+                <txp:variable name="front-page" value="1" />
+
+    </txp:if_search>
+
+    <txp:feed_link flavor="atom" format="link" label="Atom" />
+</head>
+
+  <txp:if_variable name="front-page">
+<body class="front-page" itemscope itemtype="https://schema.org/WebPage">
+  <txp:else />
+    <txp:if_search>
+<body class="search-page" itemscope itemtype="https://schema.org/SearchResultsPage">
+    <txp:else />
+        <body class="listing-page" itemscope itemtype="https://schema.org/CollectionPage">
+    </txp:if_search>
+  </txp:if_variable>
+
+<txp:output_form form="body_header_home" />
+
+    <div class="wrapper">
+        <div class="container">
+            <main id="main" aria-label="<txp:text item="main_content" />" itemscope itemtype="https://schema.org/Blog">
+
+                <txp:if_search>
+<txp:output_form form="search_display" />
+</main>
+<txp:else />
+                    <txp:if_variable name="front-page">
+<txp:article form="home_latest" limit="1" />
+<txp:article form="home_sticky" id="2" limit="1" />
+
+            </main>
+
+<nav aria-labelledby="primary-navigation" class="primary-list">
+
+  <h2 id="primary-navigation">List Of All <txp:site_name /> Articles</h2>
+  <p>Tip: <a class="next" href="<txp:site_url />">Search</a> for a tag to see a list of articles with that tag.</p>  
+                    
+ <ul>
+    <txp:article form="home_list" limit="9999" />
+ </ul>
+</nav>
+
+<txp:else />
+
+<txp:article form="article_listing_no" limit="1" />
+
+</txp:if_variable>
+</txp:if_search>   
+<txp:hide>
+           <txp:output_form form="body_aside" />
+</txp:hide>
+           <txp:output_form form="body_footer" />
+        </div> <!-- /.container -->
+    </div> <!-- /.wrapper -->
+
+
+</body>
+</html>

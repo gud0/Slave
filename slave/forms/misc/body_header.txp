@@ -1,0 +1,12 @@
+<a class="skip-link" href="#main"><txp:text item="go_content" /></a>
+
+<div class="header-wrap">
+<header class="site-header">
+
+  <nav aria-labelledby="primary-navigation" itemscope itemtype="https://schema.org/Organization"><a id="primary-navigation" class="logo" accesskey="1" itemprop="Brand" href="<txp:site_url />"><txp:site_name /></a>
+  </nav>
+
+<txp:search_input />
+
+</header>
+</div>

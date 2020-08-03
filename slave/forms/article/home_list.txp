@@ -1,0 +1,13 @@
+ <li itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header itemprop="headline">
+         <a href="<txp:permlink />" itemprop="url" title="<txp:text item="read_more" />">
+          <txp:title /></a>
+    </header>
+    <footer class="sc"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished">
+            <txp:posted format="%b %Y" />
+            </time> &middot;
+         <span itemprop="keywords"><txp:category1 title wraptag="span" class='<txp:category1 />' />
+         <txp:category2 title wraptag="span" class='<txp:category2 />' /></span>
+    </footer>
+ </li>

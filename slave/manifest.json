@@ -1,0 +1,8 @@
+{
+    "title": "Slave",
+    "version": "1.0",
+    "description": "Simple blog aiming to eliminate the possibility of duplicate content",
+    "author": "gud",
+    "author_uri": "https://slave.gud.one/",
+    "txp-type": "textpattern-theme"
+}

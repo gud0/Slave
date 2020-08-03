@@ -1,0 +1,25 @@
+<li class="article" itemscope itemtype="https://schema.org/Article">
+    <h3 itemprop="headline">
+        <a href="<txp:permlink />" itemprop="url" title="<txp:text item="read_more" />">
+            <txp:title />
+        </a>
+    </h3>
+    <txp:if_excerpt>
+        <div itemprop="description">
+           <p><txp:excerpt /><br />
+            <txp:search_result_excerpt /></p>
+        </div>
+    <txp:else />
+        <p>
+            <txp:search_result_excerpt />
+        </p>
+    </txp:if_excerpt>
+
+    <p class="sc">
+        <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished">
+            <txp:posted format="%b %Y" />
+        </time> &nbsp;
+<txp:category1 title wraptag="span" class='<txp:category1 />' /> &nbsp;
+<txp:category2 title wraptag="span" class='<txp:category2 />' /> &nbsp;
+    </p>
+</li>

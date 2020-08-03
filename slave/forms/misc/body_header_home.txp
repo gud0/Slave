@@ -1,0 +1,12 @@
+<a class="skip-link" href="#main"><txp:text item="go_content" /></a>
+
+<div class="header-wrap">
+<header class="site-header">
+
+  <h1 itemscope itemtype="https://schema.org/Organization"><a class="logo" itemprop="Brand" href="<txp:site_url />"><txp:site_name /></a>
+  </h1>
+
+  <txp:search_input />
+
+</header>
+</div>

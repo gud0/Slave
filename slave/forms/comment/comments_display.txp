@@ -1,0 +1,79 @@
+<txp:if_comments>
+
+    <section id="comments-head">
+        <h2>
+            <txp:text item="comments" />
+        </h2>
+        <ol class="comments-list">
+
+            <txp:comments wraptag="" break="li" />
+            <txp:if_comments_preview>
+                <li>
+                    <p id="cpreview">
+                        <txp:text item="press_preview_then_submit" />
+                    </p>
+
+                    <txp:comments_preview wraptag="" />
+
+                </li>
+            </txp:if_comments_preview>
+
+        </ol>
+<txp:else />
+    <txp:if_comments_preview>
+        <section id="comments-head">
+            <h2>
+                <txp:text item="comments" />
+            </h2>
+            <ol class="comments-list">
+                <li>
+                    <p id="cpreview">
+                        <txp:text item="press_preview_then_submit" />
+                    </p>
+
+                    <txp:comments_preview wraptag="" />
+
+                </li>
+            </ol>
+    <txp:else />
+        <txp:if_comments_allowed>
+            <section id="comments-head">
+                <h2>
+                    <txp:text item="comments" />
+                </h2>
+                <p>
+                    <txp:text item="no_comments" />
+                </p>
+
+        </txp:if_comments_allowed>
+    </txp:if_comments_preview>
+</txp:if_comments>
+<txp:if_comments_allowed>
+
+    <section id="comments-form">
+
+        <h3>
+            <txp:comments_invite showcount="0" textonly showalways />
+        </h3>
+
+        <txp:comments_form />
+
+    </section>
+<txp:else />
+
+    <txp:if_comments>
+        <p>
+            <strong>
+                <txp:text item="comments_expired" />
+            </strong>
+        </p>
+    </txp:if_comments>
+
+</txp:if_comments_allowed>
+<txp:if_comments>
+    </section>
+<txp:else />
+    <txp:if_comments_allowed>
+        </section>
+    </txp:if_comments_allowed>
+</txp:if_comments>

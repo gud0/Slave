@@ -1,0 +1,18 @@
+<footer class="site-footer">
+
+<p><txp:if_variable name="front-page"><txp:link_to_home class="up">Top&uarr;</txp:link_to_home><txp:else /><txp:link_to_home class="prev">Home&larr;</txp:link_to_home></txp:if_variable></p>
+<br />
+<p itemprop="webFeed">
+<txp:feed_link wraptag="span" class="atom" flavor="atom" section="">
+<txp:image id="3" />
+</txp:feed_link>
+</p>
+<br />
+
+<p><txp:text item="published_with" /> <a rel="external" href="https://textpattern.com/" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>
+</p>
+
+		<a class="topr" href="" > ↑ </a>
+		<a class="topl" href="" > ↑ </a>
+
+</footer>

@@ -1,0 +1,20 @@
+<article class="article" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<header>
+    <meta itemprop="mainEntityOfPage" content="<txp:permlink />">
+        <h1 itemprop="headline"><txp:title /></h1>
+          <p itemprop="alternativeHeadline" class="subhead"><txp:custom_field name="subhead" /></p>
+        </header>
+     <txp:if_article_image>
+        <txp:images form="images" />
+     </txp:if_article_image>
+
+    <div class="bodywrap" itemprop="articleBody"><txp:body /></div>
+ <footer class="sc"><span itemprop="author"><txp:author /></span> &middot; <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished">
+    <txp:posted format="%d %b %Y" />
+    </time> &middot; 
+<span itemprop="keywords"><txp:category1 title wraptag="span" class='<txp:category1 />' /> 
+<txp:category2 title wraptag="span" class='<txp:category2 />' /> </span>
+ </footer>
+ <txp:output_form form="comments_display" />
+
+</article>

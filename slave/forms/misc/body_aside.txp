@@ -1,0 +1,10 @@
+<aside class="complementary-content">
+
+    <txp:evaluate test="linklist">
+
+            <h3><txp:text item="links" /></h3>
+
+            <txp:linklist wraptag="ul" break="li" />
+
+    </txp:evaluate>
+</aside>
