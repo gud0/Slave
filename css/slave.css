@@ -1807,8 +1807,9 @@ td {
 .site-header a:visited 
   {background: #fbfbfe;  }
 
-.search input[type=search] 
-  {background-color: #fbfbfe;  }
+.search input[type=search],
+tbody tr:nth-child(even) 
+  {background-color: #fbfbfe; }
 
 .container,
 .site-footer 
@@ -1835,12 +1836,15 @@ thead td
 
 .search input[type=search]:hover,
 .site-header a:hover, 
-.site-header a:active 
-  {background: #cfd4e2;  }
+.site-header a:active,
+mark,
+var,
+.comments-author,
+#cpreview 
+  {background: #e2deeb;  }
 
 
 a, 
-a:visited,
 .skip-link,
 body,
 figcaption,
@@ -1851,10 +1855,6 @@ optgroup,
 select,
 textarea
   {color: #50586e; }
-
-a, 
-a:visited 
-  {text-decoration-color: #50586e;  }
 
 a:visited,
 .article a:visited 
@@ -1867,6 +1867,13 @@ h2,
 h3,
 h4,
 p.subhead 
+  {color: #727e9d;  }
+
+  .paginator a, 
+.site-footer a.prev, 
+.site-footer a.up,
+.sc,
+.ss label 
   {color: #727e9d;  }
 
 a:hover, 
@@ -1896,26 +1903,17 @@ a:focus
 .comments_error 
   {border-color: #92008b;  }
 
-.comments-author,
-#cpreview 
-  {background: #e2deeb;  }
-
-
 .site-header a, 
 .site-header a:visited,
 .site-header h1, 
 .site-header nav
   {color: #22262f; }
 
-.paginator a, 
-.site-footer a.prev, 
-.site-footer a.up,
-.sc,
-.ss label 
-  {color: #67718d;  }
 
 .bodywrap p:first-of-type:first-letter,
-.latest-p:first-letter 
+.latest-p:first-letter,
+mark,
+var
   {color: #ac887d;  }
 
 
@@ -1926,25 +1924,16 @@ thead tr
 
 th,
 td 
-  {border: 1px solid #b2bace; }
-
-
-tbody tr:nth-child(even) 
-  {background-color: #eff3f5; }
-
+  {border: 1px solid #cdd2b6; }
 
 blockquote 
   {color: #6f7455; border: 1px solid #cdd2b6;  }
-
-mark,
-var 
-  {background: #eee4e1; color: #ac887d;  }
 
 pre,
 code,
 kbd,
 samp 
-  {border: 1px solid #e3f3e3; background: #f5f6ef; color: #6f7455;  }
+  {border: 1px solid #cdd2b6; background: #fbfbfe; color: #6f7455;  }
 
 .required 
   {color: #a80c35;  }
@@ -1957,25 +1946,25 @@ samp
 
 .cat::after {
     content: "●";
-    color: #ccde92;
+    color: lightskyblue;
 }
 .lion::after {
     content: "●";
-    color: #ebcc96;
+    color: khaki;
 }
 .tiger::after {
     content: "●";
-    color: #8dd7a5;
+    color: palegreen;
 }
 .jaguar::after {
     content: "●";
-    color: #8db8d7;
+    color: lightsteelblue;
 }
 .leopard::after {
     content: "●";
-    color: #e6c196;
+    color: darksalmon;
 }
 .lynx::after {
     content: "●";
-    color: #e495ab;
+    color: lightpink;
 }
